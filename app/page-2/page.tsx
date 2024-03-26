@@ -6,11 +6,11 @@ import { useRouter } from "next/navigation";
 
 const shortStack = Short_Stack({ weight: "400", subsets: ["latin"] });
 
-export default function Home() {
+const Page = () => {
   const router = useRouter();
 
-  const nextPage = () => {
-    router.push("/page-2");
+  const previousPage = () => {
+    router.push("/");
   };
 
   return (
@@ -176,13 +176,15 @@ export default function Home() {
         </div>
 
         <div className="relative mt-2 space-x-5 flex justify-center items-center">
-          <Image
-            src="/back-button.png"
-            alt="Back Button"
-            width={60}
-            height={60}
-            className="hover:filter opacity-80 hover:opacity-100 cursor-pointer transition duration-300 ease-in-out"
-          />
+          <button onClick={previousPage}>
+            <Image
+              src="/back-button.png"
+              alt="Back Button"
+              width={60}
+              height={60}
+              className="hover:filter opacity-80 hover:opacity-100 cursor-pointer transition duration-300 ease-in-out"
+            />
+          </button>
           <Image
             src="/page-no.png"
             alt="Page Number"
@@ -190,15 +192,13 @@ export default function Home() {
             height={100}
             className="hover:filter opacity-80 hover:opacity-100 cursor-pointer transition duration-300 ease-in-out"
           />
-          <button onClick={nextPage}>
-            <Image
-              src="/next-button.png"
-              alt="Next Button"
-              width={60}
-              height={60}
-              className="hover:filter opacity-80 hover:opacity-100 cursor-pointer transition duration-300 ease-in-out"
-            />
-          </button>
+          <Image
+            src="/next-button.png"
+            alt="Next Button"
+            width={60}
+            height={60}
+            className="hover:filter opacity-80 hover:opacity-100 cursor-pointer transition duration-300 ease-in-out"
+          />
         </div>
 
         <div className="absolute bottom-1 right-[8%]">
@@ -213,4 +213,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Page;
