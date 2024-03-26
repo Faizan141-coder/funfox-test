@@ -139,8 +139,8 @@ export default function Home() {
 
         <div className="bg-white h-full w-full rounded-2xl relative justify-center items-center">
           <div className={shortStack.className}>
-            <div className="flex flex-col  space-y-2 px-5">
-              <div className="relative items-center justify-center">
+            <div className="flex flex-col items-center justify-center space-y-2 px-5">
+              <div className="relative">
                 <Image
                   src="/pink-rectangle.svg"
                   alt="Pink Rectangle"
@@ -151,12 +151,14 @@ export default function Home() {
                   Elements of Story Writing
                 </h1>
               </div>
-              <p className="px-3">
-                Welcome to term 2 of Writers Club. Are you excited for this
-                amazing journey? Over the next week, we will be practicing the
-                different elements of story writing. Our aim is to make stories
-                more interesting and exciting.
-              </p>
+              <div className="">
+                <p className="px-3">
+                  Welcome to term 2 of Writers Club. Are you excited for this
+                  amazing journey? Over the next week, we will be <br />
+                  practicing the different elements of story writing. Our aim is
+                  to make stories more interesting and exciting.
+                </p>
+              </div>
               <div className="relative">
                 <Image
                   src="/blue-rectangle.svg"
@@ -214,6 +216,21 @@ export default function Home() {
                 You must be familiar with some of these. If not, do not worry!
                 we will cover all these elements as we go along.
               </p>
+              <div className="relative">
+                <Image
+                  src="/pink-white-rectangle.svg"
+                  alt="Pink White Rectangle"
+                  width={300}
+                  height={300}
+                  className="w-full"
+                />
+                <h1 className="absolute mb-6 ml-6 px-10 inset-0 flex text-xl items-center justify-center">
+                  For today’s lesson, we will try to understand and practice
+                  writing the setting for our stories.
+                  <br />
+                  The setting is an important element of every fiction story.
+                </h1>
+              </div>
             </div>
           </div>
         </div>
