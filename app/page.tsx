@@ -81,7 +81,7 @@ export default function Home() {
                   Elements of Story Writing
                 </h1>
               </div>
-              <div className="">
+              <div>
                 <p className="px-3">
                   Welcome to term 2 of Writers Club. Are you excited for this
                   amazing journey? Over the next week, we will be <br />
@@ -185,7 +185,7 @@ export default function Home() {
           />
           <Image
             src="/page-no.png"
-            alt="Page Number"
+            alt="Page Number 1"
             width={100}
             height={100}
             className="hover:filter opacity-80 hover:opacity-100 cursor-pointer transition duration-300 ease-in-out"
