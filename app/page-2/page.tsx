@@ -64,49 +64,26 @@ const Page = () => {
           />
         </div>
 
-        <div className="bg-white h-full w-full rounded-2xl relative justify-center items-center overflow-y-auto">
+        <div className="bg-white h-full w-full rounded-2xl relative py-2 justify-center items-center overflow-y-auto">
           <div className={shortStack.className}>
-            <div className="flex flex-col items-center justify-center space-y-2 px-5">
+            <div className="flex flex-col items-center justify-center space-y-2 px-10">
               <div className="px-3">
                 <h1 className="text-3xl">
                   Can you figure out the definition of setting from the
                   following
                   <br /> examples?
                 </h1>
-                <p>(Take a minute to think about this)</p>
-              </div>
-
-              <div className="flex space-x-4">
-                <Image
-                  src="/cloud-1.svg"
-                  alt="Cloud 1"
-                  width={150}
-                  height={150}
-                />
-                <Image
-                  src="/cloud-2.svg"
-                  alt="Cloud 2"
-                  width={150}
-                  height={150}
-                />
-                <Image
-                  src="/cloud-3.svg"
-                  alt="Cloud 3"
-                  width={150}
-                  height={150}
-                />
-                <Image
-                  src="/cloud-4.svg"
-                  alt="Cloud 4"
-                  width={150}
-                  height={150}
-                />
-                <Image
-                  src="/cloud-5.svg"
-                  alt="Cloud 5"
-                  width={150}
-                  height={150}
-                />
+                <p className="text-xl">(Take a minute to think about this)</p>
+                <p>So what do you think the definition of setting is?</p>
+                <div className="flex">
+                  <p>Any guesses?</p>
+                  <Image 
+                    src="/thinking-emoji.png"
+                    alt="Thinking Emoji"
+                    width={50}
+                    height={50}
+                  />
+                </div>
               </div>
               <div className="relative">
                 <Image
@@ -114,7 +91,7 @@ const Page = () => {
                   alt="Blue Rectangle"
                   width={300}
                   height={300}
-                  className="w-full"
+                  className="w-full h-full"
                 />
                 <h1 className="absolute mx-7 inset-0 flex text-xl items-center justify-center text-white">
                   Setting is the time and place of a story. It often answers the
