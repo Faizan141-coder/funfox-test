@@ -46,8 +46,8 @@ const Page = () => {
         </div>
         <div className="absolute top-[45%] right-0">
           <Image
-            src="/close-book.svg"
-            alt="Close Book"
+            src="/instructions.png"
+            alt="Instructions"
             width={80}
             height={80}
           />
