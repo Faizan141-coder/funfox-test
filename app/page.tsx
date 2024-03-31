@@ -67,7 +67,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="bg-white h-full w-full rounded-2xl relative justify-center items-center overflow-y-auto">
+        <div className="bg-[#f8f9ff] h-full w-full rounded-2xl relative justify-center items-center overflow-y-auto">
           <div className={shortStack.className}>
             <div className="flex flex-col items-center justify-center space-y-2 px-5">
               <div className="relative">

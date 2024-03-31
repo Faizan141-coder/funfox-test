@@ -64,7 +64,7 @@ const Page = () => {
           />
         </div>
 
-        <div className="bg-white h-full w-full rounded-2xl relative py-2 justify-center items-center overflow-y-auto">
+        <div className="bg-[#f8f9ff] h-full w-full rounded-2xl relative py-2 justify-center items-center overflow-y-auto">
           <div className={shortStack.className}>
             <div className="flex flex-col items-center justify-center space-y-2 px-10">
               <div className="px-3">
@@ -74,14 +74,40 @@ const Page = () => {
                   <br /> examples?
                 </h1>
                 <p className="text-xl">(Take a minute to think about this)</p>
-                <p>So what do you think the definition of setting is?</p>
-                <div className="flex">
+                <div className="flex justify-center">
+                  <div className="grid grid-cols-2 py-4 space-x-10">
+                    <Image
+                      src="/sunny-day.png"
+                      alt="Sunny Day"
+                      width={300}
+                      height={300}
+                    />
+                    <Image
+                      src="/rainy-night.png"
+                      alt="Rainy Night"
+                      width={340}
+                      height={400}
+                    />
+                  </div>
+                </div>
+
+                <p className="my-2">
+                  So what do you think the definition of setting is?
+                </p>
+                <div className="flex items-center justify-center space-x-10">
                   <p>Any guesses?</p>
-                  <Image 
-                    src="/thinking-emoji.png"
-                    alt="Thinking Emoji"
-                    width={50}
-                    height={50}
+                  <Image
+                    src="/any-guesses.png"
+                    alt="Any Guesses"
+                    width={600}
+                    height={400}
+                  />
+                  <p>Hints: </p>
+                  <Image
+                    src="/hints.png"
+                    alt="Hints"
+                    width={100}
+                    height={100}
                   />
                 </div>
               </div>
